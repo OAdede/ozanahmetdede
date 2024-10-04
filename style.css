@@ -402,37 +402,37 @@ h1 {
 }
 
 .videoview p {
-    margin-bottom: 30px; /* Altında 30px boşluk oluştur */
+    margin-bottom: 30px;
 }
 
-/* Yeni stil ekleme */
+
 .video-container {
-    width: 100%; /* Kapsayıcı genişliği %100 */
-    max-width: 900px; /* Maksimum genişlik (isteğe bağlı) */
-    margin: 0 auto; /* Ortada konumlandırma */
+    width: 100%; 
+    max-width: 900px; 
+    margin: 0 auto; 
 }
 
 .video-container iframe {
-    width: 100%; /* Video genişliği %100 */
-    height: 500px; /* Video yüksekliği (isteğe bağlı) */
+    width: 100%; 
+    height: 500px; 
 }
 
 @media(max-width: 700px) {
     .video-container {
-        width: 100%; /* Kapsayıcı genişliği %100 */
-        max-width: 100%; /* Maksimum genişlik %100 olmalı, '100x' hatalı */
-        margin: 0 auto; /* Ortada konumlandırma */
-        padding-bottom: 75%; /* Video oranını ayarlamak için */
-        position: relative; /* Pozisyon ayarı */
-        height: 0; /* Yükseklik sıfırdan başlat */
+        width: 100%; 
+        max-width: 100%; 
+        margin: 0 auto; 
+        padding-bottom: 75%; 
+        position: relative; 
+        height: 0; 
     }
     
     .video-container iframe {
-        position: absolute; /* Pozisyon ayarı */
-        top: 0; /* Üstten sıfır */
-        left: 0; /* Soldan sıfır */
-        width: 100%; /* Video genişliği %100 */
-        height: 100%; /* Video yüksekliği %100 */
+        position: absolute; 
+        top: 0;
+        left: 0; 
+        width: 100%; 
+        height: 100%;
     }
 }
 
