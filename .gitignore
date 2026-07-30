@@ -1,0 +1,9 @@
+# İşletim sistemi çöp dosyaları
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editör dosyaları
+.vscode/
+.idea/
+*.swp
