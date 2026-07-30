@@ -1,216 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Ozan Ahmet Dede — Bilgisayar Mühendisi · Portfolyo</title>
+    <meta name="description"
+        content="Ozan Ahmet Dede — Sensörden buluta gerçek zamanlı sistemler kuran bilgisayar mühendisi. IoT, yapay zekâ ve full-stack projeler.">
+    <meta property="og:title" content="Ozan Ahmet Dede — Portfolyo">
+    <meta property="og:description" content="Sensörden buluta: gerçek zamanlı sistemler, IoT ve yapay zekâ projeleri.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oadede.github.io/Kisisel-Portfolyo-Web-Sitesi/">
+    <meta property="og:image" content="https://oadede.github.io/Kisisel-Portfolyo-Web-Sitesi/image/su.jpg">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1020'/%3E%3Ccircle cx='32' cy='26' r='10' fill='none' stroke='%23FFB424' stroke-width='5'/%3E%3Ccircle cx='32' cy='48' r='5' fill='%233DDFAD'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ozan Ahmet Dede",
+        "jobTitle": "Bilgisayar Mühendisi",
+        "alumniOf": "Süleyman Demirel Üniversitesi",
+        "email": "mailto:dedeozanahmet@gmail.com",
+        "sameAs": [
+            "https://github.com/OAdede",
+            "https://www.linkedin.com/in/ozanahmetdede",
+            "https://www.instagram.com/ozan.dde/"
+        ]
+    }
+    </script>
 </head>
 
 <body>
 
-    <section class="header">
-        <div class="navbar">
-            <a href="index.html" class="logo"><img src="image/logo480.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+    <a class="atla" href="#icerik">İçeriğe atla</a>
+
+    <header class="ust-bar">
+        <nav class="gezinme" aria-label="Ana gezinme">
+            <a class="marka" href="#" aria-label="Başa dön">
+                <span class="marka-nokta" aria-hidden="true"></span>ozan<b>.dede</b>
+            </a>
+            <button class="menu-dugme" aria-expanded="false" aria-controls="menuPanel" aria-label="Menüyü aç">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="menu-panel" id="menuPanel">
                 <ul>
-                    <li><a href="index.html">ANA SAYFA</a></li>
-                    <li><a href="about.html">HAKKIMDA</a></li>
-                    <li><a href="experience.html">BECERİLERİM</a></li>
-                    <li><a href="contact.html">İLETİŞİM</a></li>
+                    <li><a href="#hakkimda">Hakkımda</a></li>
+                    <li><a href="#projeler">Projeler</a></li>
+                    <li><a href="#beceriler">Beceriler</a></li>
+                    <li><a href="#ekran-disi">Ekran Dışı</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                    <li class="menu-github"><a href="https://github.com/OAdede" target="_blank" rel="noopener">GitHub&nbsp;↗</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
 
-        </div>
+    <main id="icerik" tabindex="-1">
 
+        <!-- ============ HERO ============ -->
+        <section class="kahraman">
+            <div class="kapsayici">
+                <p class="canli-etiket giris-1"><span class="nabiz" aria-hidden="true"></span>CANLI — PORTFOLYO
+                    <span class="etiket-ayrac">/</span> ADANA, TR</p>
 
-        <div class="text-box">
-            <h1>Merhaba, Benim Adım Ozan.</h1>
-            <p style="color:rgba(255, 255, 255, 0.678);">Bilgisayar mühendisliği öğrencisiyim ve teknoloji dünyasına olan ilgimle birlikte farklı projeler üzerinde çalışıyorum. Kendimi tanıtmak için bu siteyi yaptım. </p>
+                <h1 class="kahraman-baslik">
+                    <span class="giris-2">Ozan Ahmet</span>
+                    <span class="giris-3">Dede<b class="vurgu-nokta">.</b></span>
+                </h1>
 
-            <a  class="hero-btn" onclick="btndown()">Göz gezdirin</a>
+                <p class="kahraman-alt giris-4">
+                    Bilgisayar mühendisiyim. <strong>Sensörden buluta</strong> —
+                    veriyi toplayan, işleyen ve gerçek zamanlı ekrana taşıyan sistemler kuruyorum.
+                </p>
 
-
-
-
-
-        </div>
-
-        <div class="click" onclick="btndown()">
-            <button>
-
-                <i class="fa-solid fa-arrow-down" style="color: #ffffff; display: block;"></i>
-            </button>
-        </div>
-
-    </section>
-
-
-    
-    <section class="experience">
-        <h1>Becerilerim ve Deneyimlerim</h1>
-<p>Bilgisayar mühendisliği öğrencisi olarak, yazılım geliştirme ve problem çözme konusunda çeşitli deneyimler kazandım.</p>
-
-        <div class="row">
-
-            <div class="experience-col">
-                <h3>Java, C++ ve C#</h3>
-    <p>Orta düzeyde Java, C++ ve C# programlama dillerine hakimim. Bu dillerde küçük ve orta ölçekli projeler geliştirdim, algoritma ve veri yapıları üzerinde çalıştım.</p>
-            </div>
-            <div class="experience-col">
-                <h3>Yazılım Geliştirme</h3>
-    <p>Geliştirdiğim projelerle takım çalışması becerileri kazandım ve yazılım geliştirme sürecini daha yakından deneyimledim. İlerleyen süreçte web ve mobil uygulama geliştirme alanında kariyer yapmak istiyorum.</p>
-            </div>
-            <div class="experience-col">
-                <h3>Hedeflerim</h3>
-                <p>Yazılım mühendisliği alanında uzmanlaşarak, yenilikçi projelerde yer almak istiyorum. Hedefim, teknoloji dünyasında kalıcı izler bırakmak ve yeni teknolojilere katkı sağlamak.</p>
-            </div>
-
-
-        </div>
-
-
-
-    </section>
-
-
-
-
-    <section class="campus">
-
-        <h1>Hobilerim ve İlgi Alanlarım</h1>
-<p>Yazılım ve teknoloji dışında çeşitli sosyal ve kültürel aktivitelerle de ilgileniyorum.</p>
-
-        <div class="row">
-            <div class="campus-col">
-                <img src="image/tiyatro.jpg" alt="">
-                <div class="layer">
-                    <h3>Tiyatro</h3>
-        <p>Hem izleyici olarak hem de sahne deneyimi ile tiyatroya büyük bir ilgi duyuyorum. Tiyatro, hayal gücümü genişletmemde bana büyük katkı sağlıyor.</p>
+                <div class="kahraman-eylem giris-5">
+                    <a class="dugme dugme-dolu" href="#projeler">Projelerime bak</a>
+                    <a class="dugme dugme-cerceve" href="https://oadede.github.io/terminal-cv/" target="_blank"
+                        rel="noopener">Terminal CV'yi dene&nbsp;↗</a>
                 </div>
             </div>
-            <div class="campus-col">
-                <img src="image/kamp.jpg" alt="">
-                <div class="layer">
-                    <h3>Kamp</h3>
-        <p>Doğa ile iç içe olmak ve kamp yapmak, bana yeni yerler keşfetme ve farklı bakış açıları kazanma fırsatı sunuyor.</p>
+
+            <div class="telemetri giris-6">
+                <canvas id="dalga" aria-hidden="true"></canvas>
+                <div class="kapsayici">
+                    <dl class="okumalar">
+                        <div class="okuma">
+                            <dt>EĞİTİM</dt>
+                            <dd>SDÜ Bilgisayar Müh. — 2026</dd>
+                        </div>
+                        <div class="okuma">
+                            <dt>ODAK</dt>
+                            <dd>IoT · Yapay Zekâ · Full-Stack</dd>
+                        </div>
+                        <div class="okuma">
+                            <dt>DURUM</dt>
+                            <dd><span class="durum-isik" aria-hidden="true"></span>Yeni fırsatlara açık</dd>
+                        </div>
+                    </dl>
                 </div>
             </div>
-            <div class="campus-col">
-                <img src="image/seyahat.jpg" alt="">
-                <div class="layer">
-                    <h3>Seyahat</h3>
-        <p>Farklı şehir ve kültürleri tanımak, dünyayı geniş bir perspektiften görmeme yardımcı oluyor.</p>
+        </section>
+
+        <!-- ============ HAKKIMDA ============ -->
+        <section class="bolum" id="hakkimda">
+            <div class="kapsayici">
+                <p class="bolum-etiket ortaya-cik">[ HAKKIMDA ]</p>
+                <div class="hakkimda-izgara">
+                    <div class="hakkimda-metin ortaya-cik">
+                        <h2>Adana'dan Isparta'ya, <br>koddan sahneye.</h2>
+                        <p>
+                            Adana İmamoğlu'nda doğdum; Süleyman Demirel Üniversitesi Bilgisayar
+                            Mühendisliği'nden 2026'da mezun oldum. Çocuklukta başlayan teknoloji merakım,
+                            bugün elle tutulur işlere dönüştü: bitirme tezim, bir baretin kafada olup
+                            olmadığını sensör verisinden anlayan yapay zekâ destekli bir canlı takip
+                            sistemiydi — aynı fikri TÜBİTAK 2209-A araştırma önerisine de taşıdım.
+                        </p>
+                        <p>
+                            En sevdiğim işler, fiziksel dünya ile yazılımın kesiştiği yerde duruyor: bir
+                            mikrodenetleyiciden veri okumak, onu bir modele öğretmek ve sonucu herkesin
+                            anlayacağı bir panele taşımak. 2025'te Ankara'da BTK stajında kurum içi React
+                            araçları üzerinde çalıştım; branch/PR akışı, code review ve birlikte üretme
+                            disiplinini sahada öğrendim. Bugünlerde geliştirme sürecimin merkezinde yapay
+                            zekâ destekli araçlar var — Claude Code, Playwright, n8n.
+                        </p>
+                        <p>
+                            Ekran dışında sahnedeyim: tiyatro, topluluk önünde düşünmeyi ve anlatmayı öğretti.
+                            Kamp ve seyahat de fikirlerin en iyi açık havada geldiğini.
+                        </p>
+                    </div>
+                    <aside class="hizli-bakis ortaya-cik" aria-label="Hızlı bakış">
+                        <h3 class="mono-baslik">HIZLI BAKIŞ</h3>
+                        <ul>
+                            <li><span>Eğitim</span>Süleyman Demirel Üniversitesi — Bilgisayar Mühendisliği,
+                                2026</li>
+                            <li><span>Bitirme Tezi</span>IMU Tabanlı Akıllı Kask Canlı Takip Sistemi</li>
+                            <li><span>Staj</span>BTK, Ankara — 2025 · Yaz stajı — 2026</li>
+                            <li><span>İlgi</span>Gömülü sistemler, makine öğrenmesi, web, YZ destekli
+                                geliştirme</li>
+                            <li><span>Konum</span>Adana, Türkiye — taşınmaya açığım</li>
+                            <li><span>Diller</span>Python · JavaScript · Java · C++ · C#</li>
+                        </ul>
+                    </aside>
                 </div>
             </div>
+        </section>
+
+        <!-- ============ PROJELER ============ -->
+        <section class="bolum bolum-koyu" id="projeler">
+            <div class="kapsayici">
+                <p class="bolum-etiket ortaya-cik">[ PROJELER ]</p>
+                <h2 class="ortaya-cik">Üretim hattından çıkanlar</h2>
+                <p class="bolum-ozet ortaya-cik">Hepsi gerçek, hepsi GitHub'da. En yenisi en üstte.</p>
+
+                <!-- Öne çıkan proje -->
+                <article class="proje-vitrin ortaya-cik">
+                    <div class="proje-ust">
+                        <p class="proje-durum"><span class="durum-isik" aria-hidden="true"></span>BİTİRME TEZİ ·
+                            2026</p>
+                        <h3><a href="https://github.com/OAdede/akilli-baret-canli-takip-sistemi" target="_blank"
+                                rel="noopener">Akıllı Baret — Canlı Takip Sistemi</a></h3>
+                        <p class="proje-aciklama">
+                            Şantiyede baretin gerçekten kafada olup olmadığını <em>kamerasız</em> anlayan
+                            iş güvenliği prototipi. Baret üzerindeki IMU sensöründen akan hareket verisi,
+                            eğittiğim Random Forest modeliyle dört duruma sınıflandırılıyor ve canlı panele
+                            yaklaşık bir saniyede düşüyor. SDÜ bitirme tezim olarak geliştirdim; fikri
+                            TÜBİTAK 2209-A araştırma önerisine de taşıdım.
+                        </p>
+                        <p class="boru-hatti mono" aria-label="Sistem mimarisi">
+                            <span>MPU6050</span><i>▸</i><span>ESP32</span><i>▸</i><span>FastAPI</span><i>▸</i><span>RF&nbsp;Model</span><i>▸</i><span>Canlı&nbsp;Panel</span>
+                        </p>
+                    </div>
+                    <ul class="teknoloji-listesi" aria-label="Kullanılan teknolojiler">
+                        <li>Python</li>
+                        <li>scikit-learn</li>
+                        <li>FastAPI</li>
+                        <li>Streamlit</li>
+                        <li>ESP32</li>
+                        <li>C++</li>
+                    </ul>
+                </article>
+
+                <div class="proje-izgara">
+                    <article class="proje-kart ortaya-cik">
+                        <p class="proje-durum"><span class="durum-isik" aria-hidden="true"></span>CANLI VERİ</p>
+                        <h3><a href="https://github.com/OAdede/GeoGuardian" target="_blank"
+                                rel="noopener">GeoGuardian</a></h3>
+                        <p>Dünya genelindeki depremleri gerçek zamanlı izleyen sistem; sismik veriyi 2D haritada
+                            ve 3D küre üzerinde canlı gösterir.</p>
+                        <ul class="teknoloji-listesi">
+                            <li>Python</li>
+                            <li>Canlı API</li>
+                            <li>3D Küre</li>
+                        </ul>
+                    </article>
+
+                    <article class="proje-kart ortaya-cik">
+                        <p class="proje-durum"><span class="durum-isik" aria-hidden="true"></span>CANLI DEMO</p>
+                        <h3><a href="https://github.com/OAdede/terminal-cv" target="_blank" rel="noopener">Terminal
+                                CV</a></h3>
+                        <p>Komutlarla gezilen, CLI temalı özgeçmiş sitesi: autocomplete, komut geçmişi, 6 tema.
+                            <a class="mini-baglanti" href="https://oadede.github.io/terminal-cv/" target="_blank"
+                                rel="noopener">Canlı demo ↗</a></p>
+                        <ul class="teknoloji-listesi">
+                            <li>React 19</li>
+                            <li>Vite</li>
+                            <li>GitHub Pages</li>
+                        </ul>
+                    </article>
+
+                    <article class="proje-kart ortaya-cik">
+                        <p class="proje-durum"><span class="durum-isik sari" aria-hidden="true"></span>EKİP PROJESİ</p>
+                        <h3><a href="https://github.com/OAdede/BTK_Restaurant_APP" target="_blank"
+                                rel="noopener">Restoran Yönetim Sistemi</a></h3>
+                        <p>BTK stajında ekiple geliştirdiğimiz uçtan uca sistem: web admin paneli, mobil uygulama
+                            ve API. Garson / kasiyer / admin rollerine göre yetkilendirme.</p>
+                        <ul class="teknoloji-listesi">
+                            <li>Spring Boot</li>
+                            <li>React</li>
+                            <li>Flutter</li>
+                        </ul>
+                    </article>
+
+                    <article class="proje-kart ortaya-cik">
+                        <p class="proje-durum"><span class="durum-isik sari" aria-hidden="true"></span>WEB UYGULAMASI</p>
+                        <h3><a href="https://github.com/OAdede/FitVerse" target="_blank" rel="noopener">FitVerse</a>
+                        </h3>
+                        <p>Egzersiz sayfaları, puanlama ve REST API entegrasyonu olan fitness web uygulaması.</p>
+                        <ul class="teknoloji-listesi">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </article>
+
+                    <article class="proje-kart ortaya-cik">
+                        <p class="proje-durum"><span class="durum-isik sari" aria-hidden="true"></span>DONANIM</p>
+                        <h3><a href="https://github.com/OAdede" target="_blank" rel="noopener">4WD Robot Araba</a></h3>
+                        <p>Çizgi izleme, Bluetooth kontrolü ve ultrasonik engel algılamayı tek kodda birleştiren,
+                            modlar arasında geçiş yapabilen robot.</p>
+                        <ul class="teknoloji-listesi">
+                            <li>Arduino Uno</li>
+                            <li>L298N</li>
+                            <li>HC-05</li>
+                        </ul>
+                    </article>
+
+                    <article class="proje-kart proje-kart-cta ortaya-cik">
+                        <p class="mono">git log --all</p>
+                        <h3>Devamı GitHub'da</h3>
+                        <p>Deneyler, ödevler ve devam eden işler dahil her şey profilimde.</p>
+                        <a class="dugme dugme-cerceve" href="https://github.com/OAdede" target="_blank"
+                            rel="noopener">github.com/OAdede&nbsp;↗</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ BECERİLER ============ -->
+        <section class="bolum" id="beceriler">
+            <div class="kapsayici">
+                <p class="bolum-etiket ortaya-cik">[ BECERİLER ]</p>
+                <h2 class="ortaya-cik">Alet çantam</h2>
+                <p class="bolum-ozet ortaya-cik">Sinyalden arayüze, katman katman.</p>
+
+                <div class="beceri-izgara">
+                    <div class="beceri-grup ortaya-cik">
+                        <h3 class="mono-baslik">GÖMÜLÜ &amp; IoT</h3>
+                        <ul class="teknoloji-listesi buyuk">
+                            <li>Arduino</li>
+                            <li>ESP32</li>
+                            <li>MPU6050</li>
+                            <li>Sensör entegrasyonu</li>
+                            <li>HC-05 / Bluetooth</li>
+                        </ul>
+                    </div>
+                    <div class="beceri-grup ortaya-cik">
+                        <h3 class="mono-baslik">YAPAY ZEKÂ &amp; VERİ</h3>
+                        <ul class="teknoloji-listesi buyuk">
+                            <li>Python</li>
+                            <li>scikit-learn</li>
+                            <li>Random Forest</li>
+                            <li>Streamlit</li>
+                            <li>Veri görselleştirme</li>
+                        </ul>
+                    </div>
+                    <div class="beceri-grup ortaya-cik">
+                        <h3 class="mono-baslik">BACKEND</h3>
+                        <ul class="teknoloji-listesi buyuk">
+                            <li>FastAPI</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>REST</li>
+                            <li>MongoDB</li>
+                            <li>Spring Boot (temel)</li>
+                        </ul>
+                    </div>
+                    <div class="beceri-grup ortaya-cik">
+                        <h3 class="mono-baslik">FRONTEND</h3>
+                        <ul class="teknoloji-listesi buyuk">
+                            <li>React</li>
+                            <li>Vite</li>
+                            <li>JavaScript</li>
+                            <li>Tailwind / CSS</li>
+                            <li>Framer Motion</li>
+                        </ul>
+                    </div>
+                    <div class="beceri-grup ortaya-cik">
+                        <h3 class="mono-baslik">YZ DESTEKLİ GELİŞTİRME</h3>
+                        <ul class="teknoloji-listesi buyuk">
+                            <li>Claude Code</li>
+                            <li>Playwright</li>
+                            <li>n8n</li>
+                            <li>Vercel</li>
+                            <li>Prompt mühendisliği</li>
+                        </ul>
+                    </div>
+                    <div class="beceri-grup ortaya-cik">
+                        <h3 class="mono-baslik">ARAÇLAR &amp; AĞ</h3>
+                        <ul class="teknoloji-listesi buyuk">
+                            <li>Git / GitHub</li>
+                            <li>Docker (temel)</li>
+                            <li>CI/CD (temel)</li>
+                            <li>Packet Tracer</li>
+                            <li>Subnetting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EKRAN DIŞI ============ -->
+        <section class="bolum bolum-koyu" id="ekran-disi">
+            <div class="kapsayici">
+                <p class="bolum-etiket ortaya-cik">[ EKRAN DIŞI ]</p>
+                <h2 class="ortaya-cik">Kod yazmadığım zamanlar</h2>
+                <p class="bolum-ozet ortaya-cik">İyi fikirlerin çoğu klavyeden uzaktayken geliyor.</p>
+
+                <div class="hobi-izgara">
+                    <figure class="hobi-kart ortaya-cik">
+                        <img src="image/tiyatro.jpg" alt="Tiyatro sahnesi" loading="lazy">
+                        <figcaption>
+                            <h3>Tiyatro</h3>
+                            <p>Isparta Kültür Merkezi'nde beş skeçte sahne aldım — favorim "Karabatak Gölü
+                                Balesi". Topluluk önünde düşünmeyi burada öğrendim.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="hobi-kart ortaya-cik">
+                        <img src="image/kamp.jpg" alt="Kamp ateşi ve çadır" loading="lazy">
+                        <figcaption>
+                            <h3>Kamp</h3>
+                            <p>Doğayla iç içe, sinyalin çekmediği yerlerde zihin tazelemek.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="hobi-kart ortaya-cik">
+                        <img src="image/seyahat.jpg" alt="Seyahat manzarası" loading="lazy">
+                        <figcaption>
+                            <h3>Seyahat</h3>
+                            <p>Yeni şehirler, yeni kültürler; perspektif en değerli bagaj.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ İLETİŞİM ============ -->
+        <section class="bolum" id="iletisim">
+            <div class="kapsayici iletisim-kapsayici">
+                <p class="bolum-etiket ortaya-cik">[ İLETİŞİM ]</p>
+                <h2 class="ortaya-cik">Birlikte bir şeyler kuralım<b class="vurgu-nokta">.</b></h2>
+                <p class="bolum-ozet ortaya-cik">
+                    Staj, iş birliği ya da sadece proje muhabbeti — kutum açık.
+                </p>
+                <div class="iletisim-eylem ortaya-cik">
+                    <a class="dugme dugme-dolu" href="mailto:dedeozanahmet@gmail.com">dedeozanahmet@gmail.com</a>
+                    <button class="dugme dugme-cerceve" id="epostaKopyala" type="button">E-postayı kopyala</button>
+                </div>
+                <ul class="sosyal ortaya-cik" aria-label="Sosyal bağlantılar">
+                    <li><a href="https://github.com/OAdede" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/ozanahmetdede" target="_blank"
+                            rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/ozan.dde/" target="_blank" rel="noopener">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="alt-bilgi">
+        <div class="kapsayici alt-bilgi-ic">
+            <p class="mono">© <span id="yil">2026</span> Ozan Ahmet Dede — Adana'da ☕ ile derlendi.</p>
+            <a class="mono kaynak" href="https://github.com/OAdede/Kisisel-Portfolyo-Web-Sitesi" target="_blank"
+                rel="noopener">kaynak kodu ↗</a>
         </div>
-    </section>
+    </footer>
 
-
-
-
-
-<section class="videoview">
-    <h1>Bilgisayar Mühendisliği Okumak</h1>
-    <p>Bilgisayar mühendisliği eğitimi, yazılım geliştirme, sistem analizi ve daha birçok alanda bilgi ve beceri kazandırır. Bu video, bilgisayar mühendisliği programının sunduğu fırsatlar ve kariyer olanakları hakkında bilgi verecektir.</p>
-    
-    <div class="video-container">
-        <video width="640" height="360" controls>
-            <source src="video/müh.mp4" type="video/mp4">
-            Tarayıcınız bu videoyu desteklemiyor.
-        </video>
-    </div>
-</section>
-
-
-
-
-    <section class="cta">
-        <h1>Daha fazla bilgi almak veya projelerim hakkında konuşmak için bana ulaşabilirsiniz.</h1>
-        <a href="contact.html" class="hero-btn">İletişim İçin. </a>
-
-    </section>
-
-
-
-    <hr style="width: 80%;margin: auto;">
-
-
-
-    <section class="footer">
-        <h4>İletişime Geçin</h4>
-        <p>Daha fazla bilgi veya projelerim hakkında detaylar için benimle iletişime geçebilirsiniz.</p>
-        <div class="icons">
-            <a href="https://www.instagram.com/ozan.dde/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-        </div>
-        <p>&copy; 2024 Ozan Ahmet Dede | Öğrenci No: 2121032038 </p>
-    </section>
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu() {
-            navLinks.style.right = "-220px";
-        }
-
-
-
-
-        function btndown() {
-            const targetPosition = window.scrollY + 470;
-            window.scrollTo({
-                top: targetPosition,
-                behavior: "smooth"
-            });
-        }
-
-
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
